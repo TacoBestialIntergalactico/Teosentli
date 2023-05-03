@@ -1,5 +1,7 @@
 package MX.TeosentliTeam.teosentli;
 
+//Texto Checador del Github, P**o El Que Lo Lea
+
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
