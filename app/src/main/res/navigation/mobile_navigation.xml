@@ -19,7 +19,16 @@
         <action
             android:id="@+id/action_nav_home_to_nav_pruebas2"
             app:destination="@id/nav_prueba" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_nature2"
+            app:destination="@id/nav_nature" />
     </fragment>
+
+    <fragment
+        android:id="@+id/nav_nature"
+        android:name="MX.TeosentliTeam.teosentli.ui.nature.NatureFragment"
+        android:label="@string/menu_teosentli"
+        tools:layout="@layout/fragment_nature" />
 
     <fragment
         android:id="@+id/nav_prueba"
