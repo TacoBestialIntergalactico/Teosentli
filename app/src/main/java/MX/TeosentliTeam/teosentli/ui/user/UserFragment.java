@@ -15,7 +15,7 @@ import MX.TeosentliTeam.teosentli.databinding.FragmentUserBinding;
 public class UserFragment extends Fragment {
 
     private FragmentUserBinding binding;
-
+//heyehahifaaga
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         UserViewModel userViewModel =
