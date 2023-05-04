@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Esto de aui es para añadir el menu de hamburguesa dentro del fragmento, chuequen bien eso, si no lo ponen va intercambiar el icono del menu por una flecha de retroceso
         //Aqui esta las acciones para que los lleve de un lugar a otro, necesitan poner el id del lugar
-        //este id se establece en res/navigation/mobile_navigation necesitan crear antes su fragmento para que les aparesca ahi
+        //Este id se establece en res/navigation/mobile_navigation necesitan crear antes su fragmento para que les aparesca ahi
         //le dan click a su pantalla del fragmento y muevan el cable del nav_home hasta su fragmento
         //R.id.nav_fragmento ----> R.id.nav_news
         mAppBarConfiguration = new AppBarConfiguration.Builder(
