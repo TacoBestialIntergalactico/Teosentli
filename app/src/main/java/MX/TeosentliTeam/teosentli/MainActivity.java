@@ -49,7 +49,9 @@ public class MainActivity extends AppCompatActivity {
         //le dan click a su pantalla del fragmento y muevan el cable del nav_home hasta su fragmento
         //R.id.nav_fragmento ----> R.id.nav_news
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_teosentli, R.id.nav_plants, R.id.nav_prueba, R.id.nav_nature)
+                R.id.nav_home
+                //, R.id.nav_teosentli, R.id.nav_plants, R.id.nav_prueba, R.id.nav_nature, R.id.nav_news
+                )
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);

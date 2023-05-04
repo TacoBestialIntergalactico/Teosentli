@@ -15,4 +15,5 @@
     <string name="menu_about" />
     <string name="menu_home" />
     <string name="menu_prueba" />
+    <string name="menu_user" />
 </resources>

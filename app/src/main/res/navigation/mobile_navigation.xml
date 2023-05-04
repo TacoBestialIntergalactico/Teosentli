@@ -22,7 +22,25 @@
         <action
             android:id="@+id/action_nav_home_to_nav_nature2"
             app:destination="@id/nav_nature" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_news2"
+            app:destination="@id/nav_news" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_user2"
+            app:destination="@id/nav_user" />
     </fragment>
+
+    <fragment
+        android:id="@+id/nav_news"
+        android:name="MX.TeosentliTeam.teosentli.ui.news.NewsFragment"
+        android:label="@string/menu_teosentli"
+        tools:layout="@layout/fragment_news" />
+
+    <fragment
+        android:id="@+id/nav_user"
+        android:name="MX.TeosentliTeam.teosentli.ui.user.UserFragment"
+        android:label="@string/menu_teosentli"
+        tools:layout="@layout/fragment_user" />
 
     <fragment
         android:id="@+id/nav_nature"
