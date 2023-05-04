@@ -13,4 +13,6 @@
     <string name="menu_nature" />
     <string name="menu_configuration" />
     <string name="menu_about" />
+    <string name="menu_home" />
+    <string name="menu_prueba" />
 </resources>

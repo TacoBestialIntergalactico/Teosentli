@@ -1,16 +1,16 @@
-package MX.TeosentliTeam.teosentli.ui.home;
+package MX.TeosentliTeam.teosentli.ui.teosentli;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class HomeViewModel extends ViewModel {
+public class TeosentliViewModel extends ViewModel {
 
     private final MutableLiveData<String> mText;
 
-    public HomeViewModel() {
+    public TeosentliViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("Texto de Home");
+        mText.setValue("Texto de Teosentli");
     }
 
     public LiveData<String> getText() {

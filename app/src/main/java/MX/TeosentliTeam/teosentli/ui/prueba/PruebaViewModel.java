@@ -1,16 +1,17 @@
-package MX.TeosentliTeam.teosentli.ui.gallery;
+package MX.TeosentliTeam.teosentli.ui.prueba;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class GalleryViewModel extends ViewModel {
+public class /*AQUI*/PruebaViewModel extends ViewModel {
 
     private final MutableLiveData<String> mText;
 
-    public GalleryViewModel() {
+    //Chequen bien los nombres de las cosas, cambien Prueba por el nombre de su pantalla
+    public PruebaViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is gallery fragment");
+        mText.setValue("Texto de Prueba");
     }
 
     public LiveData<String> getText() {

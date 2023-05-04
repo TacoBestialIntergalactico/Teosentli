@@ -1,4 +1,4 @@
-package MX.TeosentliTeam.teosentli.ui.slideshow;
+package MX.TeosentliTeam.teosentli.ui.teosentli;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,22 +10,22 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import MX.TeosentliTeam.teosentli.databinding.FragmentSlideshowBinding;
+import MX.TeosentliTeam.teosentli.databinding.FragmentTeosentliBinding;
 
-public class SlideshowFragment extends Fragment {
+public class TeosentliFragment extends Fragment {
 
-    private FragmentSlideshowBinding binding;
+    private FragmentTeosentliBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        SlideshowViewModel slideshowViewModel =
-                new ViewModelProvider(this).get(SlideshowViewModel.class);
+        TeosentliViewModel teosentliViewModel =
+                new ViewModelProvider(this).get(TeosentliViewModel.class);
 
-        binding = FragmentSlideshowBinding.inflate(inflater, container, false);
+        binding = FragmentTeosentliBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textSlideshow;
-        slideshowViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        final TextView textView = binding.textTeosentli;
+        teosentliViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 

@@ -42,8 +42,13 @@ public class MainActivity extends AppCompatActivity {
         NavigationView navigationView = binding.navView;
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
+
+        //Aqui esta las acciones para que los lleve de un lugar a otro, necesitan poner el id del lugar
+        //este id se establece en res/navigation/mobile_navigation necesitan crear antes su fragmento para que les aparesca ahi
+        //le dan click a su pantalla del fragmento y muevan el cable del nav_home hasta su fragmento
+        //R.id.nav_fragmento ----> R.id.nav_news
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow)
+                R.id.nav_home, R.id.nav_teosentli, R.id.nav_plants)
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);

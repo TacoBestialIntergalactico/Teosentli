@@ -9,17 +9,34 @@
         android:id="@+id/nav_home"
         android:name="MX.TeosentliTeam.teosentli.ui.home.HomeFragment"
         android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_teosentli2"
+            app:destination="@id/nav_teosentli" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_plants2"
+            app:destination="@id/nav_plants" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_pruebas2"
+            app:destination="@id/nav_prueba" />
+    </fragment>
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="MX.TeosentliTeam.teosentli.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_prueba"
+        android:name="MX.TeosentliTeam.teosentli.ui.prueba.PruebaFragment"
+        android:label="@string/menu_teosentli"
+        tools:layout="@layout/fragment_prueba" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="MX.TeosentliTeam.teosentli.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_teosentli"
+        android:name="MX.TeosentliTeam.teosentli.ui.teosentli.TeosentliFragment"
+        android:label="@string/menu_teosentli"
+        tools:layout="@layout/fragment_teosentli" />
+
+    <fragment
+        android:id="@+id/nav_plants"
+        android:name="MX.TeosentliTeam.teosentli.ui.plants.PlantsFragment"
+        android:label="@string/menu_plants"
+        tools:layout="@layout/fragment_plants" />
+
 </navigation>
