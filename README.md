@@ -1,6 +1,8 @@
 # Teosentli
 
-PAra que les aparezca el fragmento dento del mobile_navigation, necesitan ir al codigo y poner los datos 
+Comentarios en los archivos JAVA de Prueba y en el Main Activity
+
+Para que les aparezca el fragmento dento del mobile_navigation, necesitan ir al codigo y poner los datos 
 de su fragmento y si quieren poner de inmediato la union entre el home y su fragmento escriban lo siguiente
         
 CAMBIEN TODO LO QUE DIGA "PRUEBAS" POR EL NOMBRE DE SU FRAGMENTO, RESPETEN SI LA PRIMERA LETRA EMPIEZA CON MAYUSCULA O MINUSCULA (GRACIAS)
