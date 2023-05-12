@@ -7,8 +7,4 @@
         android:title="@string/action_settings"
         app:showAsAction="withText" />
 
-    <item
-        android:id="@+id/nav_user"
-        android:icon="@drawable/ic_menu_user"
-        android:title="@string/menu_user" />
 </menu>
