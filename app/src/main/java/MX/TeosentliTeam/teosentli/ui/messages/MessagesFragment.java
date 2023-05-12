@@ -44,7 +44,7 @@ public class /*AQUI*/MessagesFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(MessagesFragment.this)
-                        .navigate(R.id.action_nav_messagges_to_personalMessageFragmen);
+                        .navigate(R.id.action_nav_messagges_to_personalMessageFragment);
             }
         });
         binding.contacto2.setOnClickListener(new View.OnClickListener() {
