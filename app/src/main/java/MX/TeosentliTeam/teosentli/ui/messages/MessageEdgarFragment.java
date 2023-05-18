@@ -9,22 +9,22 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import MX.TeosentliTeam.teosentli.databinding.FragmentPersonalMessageBinding;
+import MX.TeosentliTeam.teosentli.databinding.FragmentMessageEdgarBinding;
 
-public class /*AQUI*/PersonalMessageFragment extends Fragment {
+public class /*AQUI*/MessageEdgarFragment extends Fragment {
 
     /*AQUI*/
-    private FragmentPersonalMessageBinding binding;
+    private FragmentMessageEdgarBinding binding;
 
     //Chequen bien los nombres de las cosas, cambien Prueba por el nombre de su pantalla
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         /*AQUI*/
-        PersonalMessageViewModel personalMessageViewModel =
-                new ViewModelProvider(this).get(/*AQUI*/PersonalMessageViewModel.class);
+        MessageEdgarViewModel messageCarlosViewModel =
+                new ViewModelProvider(this).get(/*AQUI*/MessageEdgarViewModel.class);
 
         /*AQUI*/
-        binding = FragmentPersonalMessageBinding.inflate(inflater, container, false);
+        binding = FragmentMessageEdgarBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         /*AQUI*/

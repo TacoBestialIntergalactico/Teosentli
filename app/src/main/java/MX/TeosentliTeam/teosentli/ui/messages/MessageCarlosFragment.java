@@ -1,37 +1,36 @@
-package MX.TeosentliTeam.teosentli.ui.prueba;
+package MX.TeosentliTeam.teosentli.ui.messages;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-/*AQUI*/
-import MX.TeosentliTeam.teosentli.databinding.FragmentPruebaBinding;
+import MX.TeosentliTeam.teosentli.databinding.FragmentMessageCarlosBinding;
 
-public class /*AQUI*/PruebaFragment extends Fragment {
+public class /*AQUI*/MessageCarlosFragment extends Fragment {
 
     /*AQUI*/
-    private FragmentPruebaBinding binding;
+    private FragmentMessageCarlosBinding binding;
 
     //Chequen bien los nombres de las cosas, cambien Prueba por el nombre de su pantalla
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        /*AQUI*/PruebaViewModel pruebaViewModel =
-                new ViewModelProvider(this).get(/*AQUI*/PruebaViewModel.class);
+        /*AQUI*/
+        MessageCarlosViewModel messageCarlosViewModel =
+                new ViewModelProvider(this).get(/*AQUI*/MessageCarlosViewModel.class);
 
         /*AQUI*/
-        binding = FragmentPruebaBinding.inflate(inflater, container, false);
+        binding = FragmentMessageCarlosBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         /*AQUI*/
-        final TextView textView = binding.textPrueba;
 
-        /*AQUI*/pruebaViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        /*AQUI*/
+
         return root;
     }
 

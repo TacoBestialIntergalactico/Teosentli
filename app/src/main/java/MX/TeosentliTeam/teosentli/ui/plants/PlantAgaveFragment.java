@@ -1,4 +1,4 @@
-package MX.TeosentliTeam.teosentli.ui.teosentli;
+package MX.TeosentliTeam.teosentli.ui.plants;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,18 +10,18 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import MX.TeosentliTeam.teosentli.databinding.FragmentTeosentliBinding;
+import MX.TeosentliTeam.teosentli.databinding.FragmentPlantAgaveBinding;
 
-public class TeosentliFragment extends Fragment {
+public class PlantAgaveFragment extends Fragment {
 
-    private FragmentTeosentliBinding binding;
+    private FragmentPlantAgaveBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        TeosentliViewModel teosentliViewModel =
-                new ViewModelProvider(this).get(TeosentliViewModel.class);
+        PlantAgaveViewModel plantsViewModel =
+                new ViewModelProvider(this).get(PlantAgaveViewModel.class);
 
-        binding = FragmentTeosentliBinding.inflate(inflater, container, false);
+        binding = FragmentPlantAgaveBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         return root;

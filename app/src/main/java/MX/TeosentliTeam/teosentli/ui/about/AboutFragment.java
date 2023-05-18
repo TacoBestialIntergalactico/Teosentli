@@ -47,27 +47,6 @@ public class /*AQUI*/AboutFragment extends Fragment {
                         .navigate(R.id.action_nav_about_to_politicasFragment);
             }
         });
-        binding.button9.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                NavHostFragment.findNavController(AboutFragment.this)
-                        .navigate(R.id.action_nav_configuration_to_climaFragment);
-            }
-        });
-        binding.button10.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                NavHostFragment.findNavController(AboutFragment.this)
-                        .navigate(R.id.action_nav_configuration_to_teoFragment);
-            }
-        });
-        binding.button8.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                NavHostFragment.findNavController(AboutFragment.this)
-                        .navigate(R.id.action_nav_configuration_to_socialConfigFragment);
-            }
-        });
     }
 
     @Override

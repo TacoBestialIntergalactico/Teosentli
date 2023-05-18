@@ -1,27 +1,28 @@
-package MX.TeosentliTeam.teosentli.ui.teosentli;
+package MX.TeosentliTeam.teosentli.ui.news;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.navigation.fragment.NavHostFragment;
 
-import MX.TeosentliTeam.teosentli.databinding.FragmentTeosentliBinding;
+import MX.TeosentliTeam.teosentli.R;
+import MX.TeosentliTeam.teosentli.databinding.FragmentNewsVerticalBinding;
 
-public class TeosentliFragment extends Fragment {
+public class NewsVerticalFragment extends Fragment {
 
-    private FragmentTeosentliBinding binding;
+    private FragmentNewsVerticalBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        TeosentliViewModel teosentliViewModel =
-                new ViewModelProvider(this).get(TeosentliViewModel.class);
+        NewsVerticalViewModel newsViewModel =
+                new ViewModelProvider(this).get(NewsVerticalViewModel.class);
 
-        binding = FragmentTeosentliBinding.inflate(inflater, container, false);
+        binding = FragmentNewsVerticalBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         return root;

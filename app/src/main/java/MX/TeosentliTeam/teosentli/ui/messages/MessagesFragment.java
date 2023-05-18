@@ -40,18 +40,25 @@ public class /*AQUI*/MessagesFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        binding.contacto1.setOnClickListener(new View.OnClickListener() {
+        binding.button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(MessagesFragment.this)
-                        .navigate(R.id.action_nav_messagges_to_personalMessageFragment);
+                        .navigate(R.id.action_nav_messagges_to_MessageCarlosFragment);
             }
         });
-        binding.contacto2.setOnClickListener(new View.OnClickListener() {
+        binding.button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(MessagesFragment.this)
-                        .navigate(R.id.action_nav_messagges_to_personalMessageFragment);
+                        .navigate(R.id.action_nav_messagges_to_messageEdgarFragment);
+            }
+        });
+        binding.button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(MessagesFragment.this)
+                        .navigate(R.id.action_nav_messagges_to_messageLuisFragment);
             }
         });
     }
@@ -62,8 +69,4 @@ public class /*AQUI*/MessagesFragment extends Fragment {
         binding = null;
     }
 
-    public void personalMessagesgo(View view) {
-        NavHostFragment.findNavController(MessagesFragment.this)
-                .navigate(R.id.action_nav_messagges_to_personalMessageFragment);
-    }
 }

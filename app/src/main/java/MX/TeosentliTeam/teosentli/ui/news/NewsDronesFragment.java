@@ -1,27 +1,26 @@
-package MX.TeosentliTeam.teosentli.ui.teosentli;
+package MX.TeosentliTeam.teosentli.ui.news;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import MX.TeosentliTeam.teosentli.databinding.FragmentTeosentliBinding;
+import MX.TeosentliTeam.teosentli.databinding.FragmentNewsDronesBinding;
 
-public class TeosentliFragment extends Fragment {
+public class NewsDronesFragment extends Fragment {
 
-    private FragmentTeosentliBinding binding;
+    private FragmentNewsDronesBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        TeosentliViewModel teosentliViewModel =
-                new ViewModelProvider(this).get(TeosentliViewModel.class);
+        NewsDronesViewModel newsViewModel =
+                new ViewModelProvider(this).get(NewsDronesViewModel.class);
 
-        binding = FragmentTeosentliBinding.inflate(inflater, container, false);
+        binding = FragmentNewsDronesBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         return root;

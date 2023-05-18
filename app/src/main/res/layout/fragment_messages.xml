@@ -6,6 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".ui.messages.MessagesFragment">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:adjustViewBounds="false"
+        android:scaleType="fitXY"
+        android:src="@drawable/homebg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"/>
+
     <SearchView
         android:id="@+id/barraBusqueda"
         android:layout_width="0dp"
@@ -14,37 +28,53 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
-        android:layout_width="409dp"
-        android:layout_height="681dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="49dp"
-        tools:ignore="MissingConstraints" />
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/menu_social_hub"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
-        android:id="@+id/contacto1"
-        android:layout_width="0dp"
-        android:layout_height="200px"
-        android:tooltipText="Contacto 1"
-        android:src="@drawable/ic_menu_messagges"
-        app:layout_constraintEnd_toStartOf="@+id/contacto2"
+    <Button
+        android:id="@+id/button"
+        android:layout_width="179dp"
+        android:layout_height="150dp"
+        android:alpha="0"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.103"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/barraBusqueda"
-        tools:src="@drawable/ic_menu_messagges"
-        />
+        app:layout_constraintVertical_bias="0.958" />
 
-    <ImageButton
-        android:id="@+id/contacto2"
-        android:layout_width="0dp"
-        android:layout_height="200px"
-        android:tooltipText="Contacto2"
-        android:src="@drawable/ic_menu_messagges"
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="169dp"
+        android:layout_height="148dp"
+        android:alpha="0"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/contacto1"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/barraBusqueda"
-        tools:src="@drawable/ic_menu_messagges" />
+        app:layout_constraintVertical_bias="0.815" />
 
-
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="179dp"
+        android:layout_height="150dp"
+        android:alpha="0"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.892"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barraBusqueda"
+        app:layout_constraintVertical_bias="0.823" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
