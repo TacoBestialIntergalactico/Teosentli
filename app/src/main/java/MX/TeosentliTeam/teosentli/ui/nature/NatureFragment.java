@@ -26,9 +26,6 @@ public class NatureFragment extends Fragment {
         binding = FragmentNatureBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textNature;
-
-        natureViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 

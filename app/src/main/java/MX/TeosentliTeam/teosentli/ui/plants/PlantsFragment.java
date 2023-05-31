@@ -1,6 +1,7 @@
 package MX.TeosentliTeam.teosentli.ui.plants;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,6 +15,7 @@ import androidx.navigation.fragment.NavHostFragment;
 import MX.TeosentliTeam.teosentli.R;
 import MX.TeosentliTeam.teosentli.databinding.FragmentPlantsBinding;
 import MX.TeosentliTeam.teosentli.ui.home.HomeFragment;
+import MX.TeosentliTeam.teosentli.ui.messages.MessagesFragment;
 
 public class PlantsFragment extends Fragment {
 
@@ -33,20 +35,45 @@ public class PlantsFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        binding.button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navigateToPlantsFragment("Carrot");
+            }
+        });
         binding.button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                NavHostFragment.findNavController(PlantsFragment.this)
-                        .navigate(R.id.action_nav_plants_to_plantPotatoeFragment);
+                navigateToPlantsFragment("Avocado");
             }
         });
-
-        binding.button.setOnClickListener(new View.OnClickListener() {
+        binding.button3.setOnClickListener(new View.OnClickListener() {
+            @Override
             public void onClick(View view) {
-                NavHostFragment.findNavController(PlantsFragment.this)
-                        .navigate(R.id.action_nav_plants_to_plantCarrotFragment);
+                navigateToPlantsFragment("Potatoe");
             }
         });
+        binding.button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navigateToPlantsFragment("Wheat");
+            }
+        });
+        binding.button5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navigateToPlantsFragment("Agave");
+            }
+        });
+    }
+
+    private void navigateToPlantsFragment(String contactName) {
+        Log.d("ContactName", contactName);
+        Bundle bundle = new Bundle();
+        bundle.putString("contactName", contactName);
+
+        NavHostFragment.findNavController(PlantsFragment.this)
+                .navigate(R.id.action_nav_plants_to_plantFragmentM, bundle);
     }
 
     @Override

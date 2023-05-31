@@ -1,6 +1,7 @@
 package MX.TeosentliTeam.teosentli.ui.messages;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -43,24 +44,47 @@ public class /*AQUI*/MessagesFragment extends Fragment {
         binding.button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                NavHostFragment.findNavController(MessagesFragment.this)
-                        .navigate(R.id.action_nav_messagges_to_MessageCarlosFragment);
+                navigateToMessageFragment("Lemuel");
             }
         });
-        binding.button2.setOnClickListener(new View.OnClickListener() {
+         binding.button2.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View view) {
+                 navigateToMessageFragment("Torres");
+             }
+         });
+         binding.button3.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View view) {
+                navigateToMessageFragment("Carlos");
+             }
+        });
+        binding.button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                NavHostFragment.findNavController(MessagesFragment.this)
-                        .navigate(R.id.action_nav_messagges_to_messageEdgarFragment);
+                navigateToMessageFragment("Victor");
             }
         });
-        binding.button3.setOnClickListener(new View.OnClickListener() {
+        binding.button5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                NavHostFragment.findNavController(MessagesFragment.this)
-                        .navigate(R.id.action_nav_messagges_to_messageLuisFragment);
+                navigateToMessageFragment("Edgar");
+            }
+        });         binding.button6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navigateToMessageFragment("Luis");
             }
         });
+    }
+
+    private void navigateToMessageFragment(String contactName) {
+        Log.d("ContactName", contactName);
+        Bundle bundle = new Bundle();
+        bundle.putString("contactName", contactName);
+
+        NavHostFragment.findNavController(MessagesFragment.this)
+                .navigate(R.id.action_nav_messagges_to_messageFragmentM, bundle);
     }
 
     @Override
