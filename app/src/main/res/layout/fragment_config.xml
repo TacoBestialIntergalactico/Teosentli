@@ -14,7 +14,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         android:backgroundTint="@color/black"
-        android:text="Sistema"
+        android:text="@string/System"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
@@ -28,7 +28,7 @@
         android:layout_marginTop="35dp"
         android:layout_marginEnd="10dp"
         android:backgroundTint="@color/black"
-        android:text="Clima"
+        android:text="@string/Weather"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
@@ -41,7 +41,7 @@
         android:layout_marginTop="25dp"
         android:layout_marginEnd="10dp"
         android:backgroundTint="@color/black"
-        android:text="Teosentli"
+        android:text="@string/ConfTeosentli"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button2" />
@@ -54,7 +54,7 @@
         android:layout_marginTop="25dp"
         android:layout_marginEnd="10dp"
         android:backgroundTint="@color/black"
-        android:text="Social"
+        android:text="@string/Social"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button3" />
@@ -67,7 +67,7 @@
         android:layout_marginTop="25dp"
         android:layout_marginEnd="10dp"
         android:backgroundTint="@color/black"
-        android:text="Privacidad"
+        android:text="@string/Privacy"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button4" />
@@ -80,7 +80,7 @@
         android:layout_marginTop="25dp"
         android:layout_marginEnd="10dp"
         android:backgroundTint="@color/black"
-        android:text="Ayuda"
+        android:text="@string/Help"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button5" />
