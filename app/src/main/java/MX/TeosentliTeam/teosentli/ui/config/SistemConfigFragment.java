@@ -24,16 +24,17 @@ public class /*AQUI*/SistemConfigFragment extends Fragment {
     /*AQUI*/
     private FragmentSistemConfigBinding binding;
 
-
+    //Chequen bien los nombres de las cosas, cambien Prueba por el nombre de su pantalla
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-
+        /*AQUI*/
         SistemConfigViewModel sistemConfigViewModel =
                 new ViewModelProvider(this).get(/*AQUI*/SistemConfigViewModel.class);
 
-
+        /*AQUI*/
         binding = FragmentSistemConfigBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
+
 
         Spinner languageSpinner = binding.languageSpinner;
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
