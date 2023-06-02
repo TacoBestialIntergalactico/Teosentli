@@ -12,6 +12,7 @@ import android.gesture.Prediction;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.Settings;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
 import android.widget.Toast;
@@ -31,6 +32,8 @@ import java.util.ArrayList;
 
 import MX.TeosentliTeam.teosentli.databinding.ActivityMainBinding;
 import MX.TeosentliTeam.teosentli.ui.home.HomeFragment;
+import MX.TeosentliTeam.teosentli.ui.menu.ProfileFragment;
+import MX.TeosentliTeam.teosentli.ui.menu.StoreFragment;
 import MX.TeosentliTeam.teosentli.ui.messages.MessagesFragment;
 
 public class MainActivity extends AppCompatActivity {
@@ -72,12 +75,47 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-   /* @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
+
+        MenuItem storeItem = menu.findItem(R.id.action_store);
+        storeItem.setOnMenuItemClickListener(item -> {
+            // Open the store fragment
+            openStoreFragment();
+            return true;
+        });
+
+        MenuItem profileItem = menu.findItem(R.id.action_profile);
+        profileItem.setOnMenuItemClickListener(item -> {
+            // Open the profile fragment
+            openProfileFragment();
+            return true;
+        });
+
         return true;
-    }*/
+    }
+
+    private void openStoreFragment() {
+        // Create an instance of the StoreFragment
+        StoreFragment storeFragment = new StoreFragment();
+
+        // Replace the current fragment with the StoreFragment
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.nav_host_fragment_content_main, storeFragment)
+                .addToBackStack(null)
+                .commit();
+    }
+
+    private void openProfileFragment() {
+        // Create an instance of the ProfileFragment
+        ProfileFragment profileFragment = new ProfileFragment();
+
+        // Replace the current fragment with the ProfileFragment
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.nav_host_fragment_content_main, profileFragment)
+                .addToBackStack(null)
+                .commit();
+    }
 
     @Override
     public boolean onSupportNavigateUp() {

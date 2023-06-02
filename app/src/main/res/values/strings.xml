@@ -3,7 +3,7 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <string name="action_settings">Configuracion</string>
+    <string name="action_store"></string>
 
     <string name="menu_teosentli">Tesosentli</string>
     <string name="menu_plants">Plantas</string>
@@ -212,6 +212,13 @@ El jarabe de agave se caracteriza por ser alto en carbohidratos, principalmente 
     <string name="ConnectionID">ID de conexion:</string>
     <string name="TeoBattery">Bateria:</string>
     <string name="TeoDisconnect">Desconectar</string>
+    <string name="action_user" />
+    <string name="NameUser">Giovanni</string>
+    <string name="Security">Seguridad</string>
+    <string name="SignOff">Cerrar Sesión</string>
+    <string name="ChangePass">Cambiar Contraseña</string>
+    <string name="ChangeEmail">Cambiar Correo</string>
+    <string name="ChangeLoginOpt">Opciones de Inicio de Sesión</string>
 
 
 </resources>

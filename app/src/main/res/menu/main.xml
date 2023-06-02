@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/action_store"
+        android:icon="@drawable/store_icon"
         android:orderInCategory="100"
-        android:title="@string/action_settings"
-        app:showAsAction="withText" />
+        android:title="@string/action_store"
+        app:showAsAction="always"/>
 
 
+    <item
+        android:id="@+id/action_profile"
+        android:icon="@drawable/user_ico"
+        android:orderInCategory="100"
+        android:title="@string/action_user"
+        app:showAsAction="always"/>
 </menu>
