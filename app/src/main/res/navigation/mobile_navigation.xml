@@ -31,10 +31,6 @@
         <action
             android:id="@+id/action_nav_home_to_nav_about"
             app:destination="@id/nav_about" />
-
-        <action
-            android:id="@+id/action_nav_home_to_nav_user"
-            app:destination="@id/nav_user" />
         <action
             android:id="@+id/action_nav_home_to_plantFragmentM"
             app:destination="@id/plantFragmentM" />
